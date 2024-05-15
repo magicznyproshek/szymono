@@ -1,0 +1,284 @@
+body{
+    transition: background-color 0.5s;
+    background-color: rgba(18,24,40,255);
+    font-family: Andale Mono, monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* For tablets */
+@media (max-width: 768px) {
+
+    .nav-button {
+        font-size: 15px;
+    }
+
+    #section0 {
+        font-size: 40px;
+    }
+
+    .intro, .about {
+        font-size: 18px;
+    }
+
+    #web-color {
+        margin-top: 5px;
+    }
+
+    #buttons-container {
+        
+        font-size: 10px;
+    }
+
+    .nav-button {
+        padding: 0px;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .nav-button {
+        font-size: 10px;
+    }
+
+    #section0 {
+        font-size: 30px;
+    }
+
+    #section1 {
+        margin-top: 250px;
+    }
+
+    .intro, .about {
+        font-size: 16px;
+    }
+
+    #web-color {
+        margin-top: 5px;
+    }
+
+    #buttons-container {
+        font-size: 10px;
+    }
+
+    .nav-button {
+        padding: 0px;
+    }
+}
+
+#web-color-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(30,36,51,0.30);
+}
+
+
+
+#container {
+    margin-top: 10px;
+    position: fixed;
+    top: 0; 
+    width: auto;
+    display: flex;
+    
+}
+
+
+
+#web-color {
+    margin-left: 15px;
+    margin-top: 5px;
+    width: 6vh;
+    height: 3vh;
+    border-radius: 30px;
+    border: 1px solid white;
+    background-color: rgba(30,36,51,255);
+    position: relative;
+    transition: background-color 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#web-color:active {
+    animation: move 0.5s linear;
+}
+
+#web-color:hover{
+    cursor: pointer;
+}
+
+#ball {
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: white;
+    position: absolute;
+    transition: left 0.5s;
+}
+
+
+#txt-web-color{
+    align-items: center;
+    color: white;
+    font-size: 2vh;
+    font-family: 'Arial';
+}
+
+#buttons-section{
+    margin-top: -10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+
+}
+
+#buttons-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.nav-button {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-button:hover {
+    font-weight: bolder;
+    cursor: pointer;
+    color: rgb(57,100,255);
+    transition: 0.5s;
+}   
+
+
+#section0{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 0px;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    color: white;
+}
+
+.intro{
+    color: white;
+    font-size: 20px;
+}
+
+.role {
+    color: rgb(57,100,255);
+}
+
+.description {
+    color: white;
+}
+
+.about{
+    font-size: 15px;
+}
+
+
+#section1{
+    
+    margin-left: 5%; 
+    margin-bottom: 100px;
+}
+
+#frontend li img, #backend li img, #learning li img{
+    display: block;
+    width: 75px; 
+    height: auto;
+}
+
+#frontend li, #backend li, #learning li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#section1 img {
+    width: 100px;
+    height: 100px; 
+}
+#section1 li{
+    font-size: 15px;
+}
+
+#section1 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#section1 li, h2 {
+    display: inline-block;
+    margin-right: 20px;
+    color: white;
+}
+
+#section2{
+    margin-bottom: 20px;
+}
+
+#section2, h2{
+    text-align: center;
+}
+
+.button-container {
+    margin-top: 30px;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+
+#image-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+}
+
+#image-button img {
+    filter: invert(1);
+    width: 100px;
+    height: 100px;
+}
+
+#section3{
+    color: white;
+    text-align: center;
+}
+
+#section3 h2{
+    color: white;
+    margin-top: 20px;
+}
+
+#section3 p{
+    border:dashed 1px white;
+    padding: 30px 40px 30px 40px;
+    font-size: 17px;
+    color: white;
+}
