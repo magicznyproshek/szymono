@@ -4,14 +4,7 @@ function colorchange() {
     var currentColor = window.getComputedStyle(button).getPropertyValue("background-color");
     
 
-    window.addEventListener('scroll', function() {
-        const nav = document.getElementById('web-color-section');
-        if (window.scrollY > 70) {
-            nav.classList.style.backgroundColor = "rgb(30, 36, 51)";
-        } else {
-            nav.classList.remove('scrolled');
-        }
-    });
+   
 
     if (currentColor === "rgb(30, 36, 51)") {
         // light
